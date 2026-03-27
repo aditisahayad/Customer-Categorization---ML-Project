@@ -1,0 +1,12 @@
+# Render Blueprint — Customer Categorization API
+# https://render.com/docs/blueprint-spec
+
+services:
+  - type: web
+    name: customer-categorization-api
+    runtime: docker
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: MONGO_URI
+        value: ""
